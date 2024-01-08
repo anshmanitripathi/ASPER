@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="schoollogin.css">
+</head>
+<body>
+    <div class="login">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toogle-btn" onclick="login()">Login Your School</button>
+            </div>
+            <div class="icons">
+                <img src="fb.png" alt="">
+                <img src="gp.png" alt="">
+                <img src="tw.png" alt="">
+            </div>
+            <form action="#" class="input" id="login">
+                <input type="text" class="input-filed" placeholder="User Id"required>
+                <input type="password" class="input-filed" placeholder="Password"Password>
+                <input type="checkbox" class="check-box"><span> Remember Password</span>
+                <button type="submit" class="submit-btn"><a class="loginbutton" href="school login aftetr/index.html">Login</a></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var z = document.getElementById("btn");
+        
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px"
+            z.style.left ="0px"
+        }
+
+
+    </script>
+</body>
+</html>

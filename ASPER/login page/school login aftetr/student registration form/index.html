@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>registration</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <img class="logo" src="asper logo.jpg" alt="ASPER LOGO">
+                <h1 class="nav">All STUDENT PORTAL FOR<br>
+                    EDUCATIONAL RECORD</h1>
+            <ul class="navitems">
+                <li class="navitem"><a class ="text-light" href="./index.html">HOME</a></li>
+                <li class="navitem"><a class ="text-light" href="./about.html">ABOUT</a></li>
+                <li class="navitem"><a class ="text-light" href="./contact.html">HELP</a></li>
+            </ul>
+            </div>
+    </header>
+    <div class="back">
+    <div class="form">
+        <h1 id="lines">Student Registration Form</h1>
+        <h2>Personal Information</h2>
+    <!-- <form  method="GET" action="thankyou.html"> -->
+        <label for="Name of Applicant">Name of Applicant:</label>
+        <input type="text" id="Name of Applicant"placeholder="First Name" required>
+        <input type="text" id="Name of Applicant"placeholder="Middle Name" required>
+        <input type="text" id="Name of Applicant" placeholder="Last Name" required><br><br>
+
+        <label for="Father's Name">Father's Name:</label>
+        <input type="text" id="Father's Name"placeholder="First Name" required>
+        <input type="text" id="Father's Name"placeholder="Middle Name" required>
+        <input type="text" id="Father's Name" placeholder="Last Name" required><br><br>
+
+        <label for="Mother's Name">Mother's Name:</label>
+        <input type="text" id="Mother's Name"placeholder="First Name" required>
+        <input type="text" id="Mother's Name"placeholder="Middle Name" required>
+        <input type="text" id="Mother's Name" placeholder="Last Name" required><br><br>
+
+
+        <label for="Date Of Birth:">Date Of Birth:</label>
+        <input type="date" name="Date Of Birth" id="Date Of Birth" required><br><br>
+
+        <div id="lines">Select Your Gender </div> 
+        <label for="Male">Male:</label>
+        <input type="radio" name=" gender" id="radio" value="Male"required><br> 
+
+        <label for="female">female:</label>
+        <input type="radio" name=" gender" id="radio" value="Male"required><br>
+
+        <label for=" other"> other:</label>
+        <input type="radio" name=" gender" id="radio" value="Male"required><br> <br>
+
+        <label for="School Name">School Name:</label>
+        <input type="text" id="School Name"placeholder="School Name" required><br> <br>
+        
+        <label for="class">class:</label>
+        <input type="text" id="class"placeholder="class" required><br><br>
+        
+        <label for="Create Password">Create Password:</label>
+        <input type="password" id=" Create Password" placeholder="Create Password"required> <br> <br>
+
+        <label for="Confirm Password">Confirm Password:</label>
+        <input type="password" id=" Confirm Password" placeholder="Confirm Password"required> <br> <br>
+
+        <label for="  email">Email Id: </label>
+        <input type="  email" id="email  "placeholder="Email Id" required> <br><br>
+
+        <label for="Mobile No.">Mobile No.:</label>
+        <input type="number" id="Mobile No."placeholder="Mobile No." required><br><br>
+
+        <label for="Father's Occupation">Father's Occupation:</label>
+        <input type="text" id="Father's Occupation"placeholder="Father's Occupation" required><br><br>
+
+        <label for="Mother's Occupation">Mother's Occupation:</label>
+        <input type="text" id="Mother's Occupation"placeholder="Mother's Occupation" required><br><br>
+
+        <label for="Family Income">select your Family Income</label><br>
+        <select name="Family Income" id="Family Income"> 
+        <option  value="0-100000">0-100000</option> 
+        <option  value="100001-300000">100001-300000</option> 
+        <option value="300001-500000">300001-500000</option> 
+        <option value="700001-1000000">700001-1000000</option> 
+        <option value="1000000+"> 1000000+</option> <br><br>
+        </select><br><br>
+        
+        <!-- <label for="Mother's Income"><div id="lines">select your Mother's Income</div></label><br>  -->
+        <!-- <select name="Mother's Income" id="Mother's Income">  -->
+        <!-- <option  value="0-100000">0-100000</option>  -->
+        <!-- <option  value="100001-300000">100001-300000</option>  -->
+        <!-- <option value="300001-500000">300001-500000</option>  -->
+        <!-- <option value="700001-1000000">700001-1000000</option>  -->
+        <!-- <option value="1000000+"> 1000000+</option> <br><br> -->
+        <!-- </select><br><br> -->
+ 
+        
+        <div id="lines">Select Your Category </div>
+        <label for="General">General:</label>
+        <input type="radio" name="Category" id="radio" value="General"required> <br>
+
+        <label for="OBC">OBC:</label>
+        <input type="radio" name="Category" id="radio" value="General"required> <br> 
+
+        <label for=" SC/ST"> SC/ST:</label>
+        <input type="radio" name="Category" id="radio" value="General"required> <br><br>
+
+        <label for="Religion">Religion:</label>
+        <input type="text" id="Religion"placeholder="Religion" required><br><br>
+
+        <label for="Special Quota">Special Quota:</label>
+        <input type="text" id="Special Quota"placeholder="YES/NO" required><br><br>
+
+        <div id="lines">Are you a previous student</div> 
+        <label for="YES">YES:</label>
+        <input type="radio" name="status" id="radio" value="YES"required><br> 
+
+        <label for="NO">NO:</label>
+        <input type="radio" name="status" id="radio" value="YES"required><br> 
+
+        <h2>Address</h2>
+        <label for="Town/Village">Town/Village:</label>
+        <input type="text" id="Town/Village"placeholder="Town/Village" required><br><br>
+
+        <label for="Post Office">Post Office:</label>
+        <input type="text" id="Post Office"placeholder="Post Office" required><br><br>
+
+        <label for="State">State:</label>
+        <input type="text" id="State"placeholder="State" required><br><br>
+
+        <label for="District">District:</label>
+        <input type="text" id="District"placeholder="District" required><br><br>
+
+        <label for="PIN">PIN:</label>
+        <input type="number" id="PIN"placeholder="PIN" required><br><br>
+       
+        <label for="State">State:</label>
+        <input type="text" id="State"placeholder="State" required><br><br> 
+
+        <label for="Nationality">Nationality:</label>
+        <input type="text" id="Nationality"placeholder="Nationality" required><br><br>
+
+        <label for="Alternate Mobile No.">Alternate Mobile No.:</label>
+        <input type="number" id="Alternate Mobile No."placeholder="Alternate Mobile No." required><br><br>
+ 
+        <h2>Documents</h2>
+        <label for="Upload Image">Upload Image:</label>
+        <input type="file" id="Upload Image"placeholder="Upload Image" required><br><br>
+ 
+        <label for="Upload Aadhaarcad">Upload Aadhaarcad:</label>
+        <input type="file" id="Upload Aadhaarcad"placeholder="Upload Aadhaarcad" required><br> <br>
+
+        <label for="Upload Aadhaarcad"> TC (if applicable ):</label>
+        <input type="file" id="Upload Aadhaarcad"placeholder="Upload TC" ><br> <br>
+ 
+        <input type="checkbox"required>
+        <label>Agree Term And Condition </label>
+
+        <div class="bot"><a href="#">Submit</a></div>
+    </div>
+</div>
+</body>
+</html>

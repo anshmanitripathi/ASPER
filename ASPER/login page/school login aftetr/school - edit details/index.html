@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: orange;
+            color: black;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .class-list {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-right: 2px solid black;
+        }
+
+        .class-list h2 {
+            color: orange;
+        }
+
+        .class-link {
+            color: black;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .student-details {
+            flex: 3;
+            background-color: white;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        .student-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .student-table th, .student-table td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid black;
+        }
+
+        .student-table th {
+            background-color: orange;
+            color: white;
+        }
+
+        .edit-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .edit-button:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="class-list">
+            <h2>Class List</h2>
+            <ul>
+                <li><a href="#" class="class-link" data-class="1">Class 1</a></li>
+                <li><a href="#" class="class-link" data-class="2">Class 2</a></li>
+                <li><a href="#" class="class-link" data-class="3">Class 3</a></li>
+                <li><a href="#" class="class-link" data-class="4">Class 4</a></li>
+                <li><a href="#" class="class-link" data-class="5">Class 5</a></li>
+                <li><a href="#" class="class-link" data-class="6">Class 6</a></li>
+                <li><a href="#" class="class-link" data-class="7">Class 7</a></li>
+                <li><a href="#" class="class-link" data-class="8">Class 8</a></li>
+            </ul>
+        </div>
+        <div class="student-details">
+            <h2>Student Details</h2>
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>session</th>
+                        <th>Class Details</th>
+                        <th>School</th>
+                        <th>Address</th>
+                        <th>Income</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Dropout?</th>
+                        <th>Father's Name</th>
+                        <th>State</th>
+                        <th>Edit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student details will be dynamically added here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        const classLinks = document.querySelectorAll('.class-link');
+        const studentTableBody = document.querySelector('.student-table tbody');
+
+        classLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // You can load the student details for the selected class here
+                // For simplicity, we'll update the table with the same data for now
+                studentTableBody.innerHTML = `
+                    <tr>
+                        <td>abhishek</td>
+                        <td>${link.dataset.class}</td>
+                        <td>2023</td>
+                        <td>regular</td>
+                        <td>Shree G K Bharad Vidya Mandir, Rajkot</td>
+                        <td>123 Main Street</td>
+                        <td>300,000</td>
+                        <td>555-123-4567</td>
+                        <td>john.doe@example.com</td>
+                        <td>NO</td>
+                        <td>David Doe</td>
+                        <td>New York</td>
+                        <td><button class="edit-button">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>abhinav</td>
+                        <td>${link.dataset.class}</td>
+                        <td>2023</td>
+                        <td>regular</td>
+                        <td>Shree G K Bharad Vidya Mandir, Rajkot</td>
+                        <td>123 Main Street</td>
+                        <td>400,000</td>
+                        <td>555-123-4567</td>
+                        <td>john.doe@example.com</td>
+                        <td>NO</td>
+                        <td>David Doe</td>
+                        <td>New York</td>
+                        <td><button class="edit-button">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>nitya</td>
+                        <td>${link.dataset.class}</td>
+                        <td>2023</td>
+                        <td>regular</td>
+                        <td>Shree G K Bharad Vidya Mandir, Rajkot</td>
+                        <td>123 Main Street</td>
+                        <td>100,000</td>
+                        <td>555-123-4567</td>
+                        <td>john.doe@example.com</td>
+                        <td>NO</td>
+                        <td>David Doe</td>
+                        <td>New York</td>
+                        <td><button class="edit-button">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>ranjana</td>
+                        <td>${link.dataset.class}</td>
+                        <td>2023</td>
+                        <td>regular</td>
+                        <td>Shree G K Bharad Vidya Mandir, Rajkot</td>
+                        <td>123 Main Street</td>
+                        <td>500,000</td>
+                        <td>555-123-4567</td>
+                        <td>john.doe@example.com</td>
+                        <td>NO</td>
+                        <td>David Doe</td>
+                        <td>New York</td>
+                        <td><button class="edit-button">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>Ishika</td>
+                        <td>${link.dataset.class}</td>
+                        <td>2023</td>
+                        <td>regular</td>
+                        <td>Shree G K Bharad Vidya Mandir, Rajkot</td>
+                        <td>123 Main Street</td>
+                        <td>150,000</td>
+                        <td>555-123-4567</td>
+                        <td>john.doe@example.com</td>
+                        <td>NO</td>
+                        <td>David Doe</td>
+                        <td>New York</td>
+                        <td><button class="edit-button">Edit</button></td>
+                    </tr>
+                    <tr>
+                        <td>amit</td>
+                        <td>${link.dataset.class}</td>
+                        <td>2023</td>
+                        <td>regular</td>
+                        <td>Shree G K Bharad Vidya Mandir, Rajkot</td>
+                        <td>123 Main Street</td>
+                        <td>500,000</td>
+                        <td>555-123-4567</td>
+                        <td>john.doe@example.com</td>
+                        <td>NO</td>
+                        <td>David Doe</td>
+                        <td>New York</td>
+                        <td><button class="edit-button">Edit</button></td>
+                    </tr>
+                    
+                `;
+            });
+        });
+    </script>
+</body>
+</html>

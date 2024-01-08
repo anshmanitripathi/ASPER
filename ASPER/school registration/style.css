@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 58.5%;
+}
+.container{
+    max-width: 1200px;
+    width: 90%;      /*responsive banane ke liye*/
+    margin: 0 auto;  /*centre me karne ke liye*/
+
+}
+.back{
+    
+    /* position: relative; */
+    /* height: 100vh; */
+    /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url('15204.jpg'); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat: repeat; */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url('15204.jpg');
+    
+}
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-grey{
+    color: #555;
+}
+.header{
+    position: relative;
+    /* height: 100vh; */
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url('15204.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar{
+    /* padding: rem; */
+    background-color:  rgb(221, 137, 38);
+    height: 8rem;
+    
+} 
+
+ .navbar .logo{
+    float: left;
+}
+ .navbar h1{
+    float: left;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.015rem;
+    font-size: 1.5rem ;
+    word-spacing: .25rem;
+    background-color: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) white;
+ }
+ .navbar .navitems{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+.navbar a:hover{
+    border-bottom: 1px solid #050505;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ .navbar .navitem{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.logo{
+    width: 8rem ;
+    height: 8rem;
+}
+.form{
+    font-size: 3.5rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    background-color: #f4f4f4;
+    padding: 5rem;
+    border: 0.5rem solid black;
+}
+label{
+    width: 24rem;
+    display: inline-block;
+    text-transform: capitalize;
+}
+input{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    margin-right: 3rem;
+}
+.form h1{
+    text-align: center;
+    font-size: 5rem ;
+    /* background-color: lightyellow; */
+    border-bottom: 3px solid black;
+    /* border-top: 5px solid black; */
+    /* margin-top: 10px; */
+}
+.form h2{
+    text-align: center;
+    /* border-bottom:1px solid #000000; */
+    text-decoration: underline;
+    font-size: 3rem;
+    padding: 3rem;
+}
+.form p{
+    font-size: 2rem;
+}
+.bot a{
+    text-decoration: none;
+    color: white;
+    font-size:  3rem;
+    background: rgb(221, 137, 38);
+    padding: 1.5rem 2rem;
+    display: inline-block;
+    border-radius:  10rem;
+    margin-left:  45%; 
+}
+.bot a:hover{
+    color:rgb(221, 137, 38)  ;
+    background-color:white ;
+    transition: 0.5ms;
+}
+
+input[type="radio"]{
+    width: 10rem;
+    height: 2.5rem;
+}
+
+input[type="checkbox"]{
+    width: 5rem;
+    height: 3rem;
+}
+
+input[type="file"]{
+    width: 50rem;
+    /* height: 19rem; */
+}

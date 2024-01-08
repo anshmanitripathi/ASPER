@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toogle-btn" onclick="login()">LOGIN</button>
+                <button type="button" class="toogle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="icons">
+                <img src="fb.png" alt="">
+                <img src="gp.png" alt="">
+                <img src="tw.png" alt="">
+            </div>
+            <form action="#" class="input" id="login">
+                <input type="text" class="input-filed" placeholder="User Id"required>
+                <input type="text" class="input-filed" placeholder="Password"Password>
+                <input type="checkbox" class="check-box"><span> Remember Password</span>
+                <button type="submit" class="submit-btn">Log-in</button>
+            </form>
+            <form action="#" class="input" id="register">
+                <input type="text" class="input-filed" placeholder="User Id"required>
+                <input type="email" class="input-filed" placeholder="Email-id" required>
+                <input type="text" class="input-filed" placeholder="Password"Password>
+                <input type="checkbox" class="check-box"><span> I agree to terms and condition</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+        
+        function login(){
+            x.style.left ="50px";
+            y.style.left ="450px"
+            z.style.left ="0px"
+        }
+
+
+    </script>
+</body>
+</html>

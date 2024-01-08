@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Poppins:wght@300&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*######### html element styling #########*/
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;      /*responsive banane ke liye*/
+    margin: 0 auto;  /*centre me karne ke liye*/
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+/*############# utility classes ##########*/
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: rgb(221, 136, 38);
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-grey{
+    color: #555;
+}
+
+.button{
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    margin: 0.5em 0 ;
+}
+
+.button-primary{
+    background-color:#fff ;
+    color: rgb(221, 136, 38);
+    border-radius: 10em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+
+.button-primary:hover{
+    color: #ddd;
+    background-color: rgb(221, 136, 38);
+    transition: 0.25s;
+}
+
+.button-secondary{
+    border: 2px solid rgb(221, 136, 38);
+    border-radius: 1.5em;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+.button-secondary:hover{
+    color: #ddd;
+    background-color: rgb(221, 136, 38);
+    transition: 0.25s;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+
+/*############## header styling #############*/
+
+.header{
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)) ,url('15204.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    padding: rem;
+    background-color:  rgb(221, 137, 38);
+    height: 8rem;
+} 
+
+ .navbar .logo{
+    float: left;
+}
+ .navbar h1{
+    float: left;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.015rem;
+    font-size: 1.5rem ;
+    word-spacing: .25rem;
+    background-color: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) white;
+ }
+ .navbar .navitems{
+    float: right;
+    margin-top: 1rem;
+}
+
+.navbar a{
+    padding-bottom: 0.3rem;
+    color: #000000;
+    font-weight: 400;
+}
+
+
+.navbar a:hover{
+    border-bottom: 1px solid #050505;
+}
+
+.navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+ .navbar .navitem{
+    display: inline-block;
+    padding: 1rem;
+}
+
+.logo{
+    width: 8rem ;
+    height: 8rem;
+}
+
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^ header content ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.015), rgba(0,0,0,0.015));
+
+}
+
+.header .header-content h1{
+    font-weight: 700;
+    font-size: 4rem;
+    color: rgb(248, 248, 252);    
+    
+}
+
+.header .header-content p{
+    font-size: 2rem;
+}
